@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Tracker Tool</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,35 +13,35 @@
         <input type="text" id="urlInput" placeholder="Paste your link here">
         <button onclick="generateLinks()">Generate Links</button>
         <div class="output">
-            <div>
+            <div class="link-container">
                 <label for="twitterLink">Twitter Catchall:</label>
                 <input type="text" id="twitterLink" readonly>
-                <button onclick="copyToClipboard('twitterLink')">Copy URL</button>
+                <button class="copy-btn" onclick="copyToClipboard('twitterLink')"><i class="fas fa-clipboard"></i></button>
             </div>
-            <div>
+            <div class="link-container">
                 <label for="linkedinLink">LinkedIn:</label>
                 <input type="text" id="linkedinLink" readonly>
-                <button onclick="copyToClipboard('linkedinLink')">Copy URL</button>
+                <button class="copy-btn" onclick="copyToClipboard('linkedinLink')"><i class="fas fa-clipboard"></i></button>
             </div>
-            <div>
+            <div class="link-container">
                 <label for="instagramLink">Instagram:</label>
                 <input type="text" id="instagramLink" readonly>
-                <button onclick="copyToClipboard('instagramLink')">Copy URL</button>
+                <button class="copy-btn" onclick="copyToClipboard('instagramLink')"><i class="fas fa-clipboard"></i></button>
             </div>
-            <div>
+            <div class="link-container">
                 <label for="tiktokLink">TikTok:</label>
                 <input type="text" id="tiktokLink" readonly>
-                <button onclick="copyToClipboard('tiktokLink')">Copy URL</button>
+                <button class="copy-btn" onclick="copyToClipboard('tiktokLink')"><i class="fas fa-clipboard"></i></button>
             </div>
-            <div>
+            <div class="link-container">
                 <label for="ansibleTwitterLink">Ansible Twitter:</label>
                 <input type="text" id="ansibleTwitterLink" readonly>
-                <button onclick="copyToClipboard('ansibleTwitterLink')">Copy URL</button>
+                <button class="copy-btn" onclick="copyToClipboard('ansibleTwitterLink')"><i class="fas fa-clipboard"></i></button>
             </div>
-            <div>
+            <div class="link-container">
                 <label for="ansibleYoutubeLink">Ansible YouTube:</label>
                 <input type="text" id="ansibleYoutubeLink" readonly>
-                <button onclick="copyToClipboard('ansibleYoutubeLink')">Copy URL</button>
+                <button class="copy-btn" onclick="copyToClipboard('ansibleYoutubeLink')"><i class="fas fa-clipboard"></i></button>
             </div>
         </div>
     </div>
