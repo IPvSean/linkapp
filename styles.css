@@ -37,6 +37,11 @@ button:hover {
     background: #0056b3;
 }
 
-.output p {
-    margin: 5px 0;
+.output div {
+    margin: 10px 0;
+}
+
+.output input {
+    width: calc(100% - 100px);
+    margin-right: 10px;
 }

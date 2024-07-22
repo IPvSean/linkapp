@@ -12,10 +12,36 @@
         <input type="text" id="urlInput" placeholder="Paste your link here">
         <button onclick="generateLinks()">Generate Links</button>
         <div class="output">
-            <p>Twitter Catchall: <span id="twitterLink"></span></p>
-            <p>LinkedIn: <span id="linkedinLink"></span></p>
-            <p>Instagram: <span id="instagramLink"></span></p>
-            <p>TikTok: <span id="tiktokLink"></span></p>
+            <div>
+                <label for="twitterLink">Twitter Catchall:</label>
+                <input type="text" id="twitterLink" readonly>
+                <button onclick="copyToClipboard('twitterLink')">Copy URL</button>
+            </div>
+            <div>
+                <label for="linkedinLink">LinkedIn:</label>
+                <input type="text" id="linkedinLink" readonly>
+                <button onclick="copyToClipboard('linkedinLink')">Copy URL</button>
+            </div>
+            <div>
+                <label for="instagramLink">Instagram:</label>
+                <input type="text" id="instagramLink" readonly>
+                <button onclick="copyToClipboard('instagramLink')">Copy URL</button>
+            </div>
+            <div>
+                <label for="tiktokLink">TikTok:</label>
+                <input type="text" id="tiktokLink" readonly>
+                <button onclick="copyToClipboard('tiktokLink')">Copy URL</button>
+            </div>
+            <div>
+                <label for="ansibleTwitterLink">Ansible Twitter:</label>
+                <input type="text" id="ansibleTwitterLink" readonly>
+                <button onclick="copyToClipboard('ansibleTwitterLink')">Copy URL</button>
+            </div>
+            <div>
+                <label for="ansibleYoutubeLink">Ansible YouTube:</label>
+                <input type="text" id="ansibleYoutubeLink" readonly>
+                <button onclick="copyToClipboard('ansibleYoutubeLink')">Copy URL</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
