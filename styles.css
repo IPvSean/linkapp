@@ -45,6 +45,7 @@ button:hover {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    width: 450px;
 }
 
 .link-container label {
